@@ -1,6 +1,10 @@
 package database
 
-import "database/sql"
+import (
+	"database/sql"
+
+	"github.com/bruno-silverio/goapi/internal/entity"
+)
 
 type CategoryDB struct {
 	db *sql.DB
@@ -8,4 +12,22 @@ type CategoryDB struct {
 
 func NewCategoryDB(db *sql.DB) *CategoryDB {
 	return &CategoryDB{db: db}
+}
+
+func (cd *CategoryDB) GetCategories() ([]*entity.Category, error) {
+	rows, err := cd.db.Query("SELECT id, name FROM categories")
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close() //Executa tudo que precisa e depois fecha
+
+	var categories []*entity.Category
+	for rows.Next() {
+		var category entity.Category
+		if err := rows.Scan(&category.ID, &category.Name); err != nil {
+			return nil, err
+		}
+		categories = append(categories, &category)
+	}
+	return categories, nil
 }
