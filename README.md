@@ -7,8 +7,5 @@
   
   ![image](https://github.com/bruno-silverio/goapi/assets/27282770/5d16e733-40e4-4b5d-ad56-df0d3baaf8fe)
   
-  Golang
-  
-  ![image](https://github.com/bruno-silverio/goapi/assets/27282770/5f781777-e272-44a3-8425-4bdbf470a0af)
-  
+  Golang  
 </p>
