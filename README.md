@@ -30,8 +30,8 @@ $ docker-compose exec mysql bash --> Start de mysql
   $ root
 ```
 
-## Ordem do desenvolvimento
-- [x] Microsserviço API de produtos - Go
+## Order of development
+- [x] Microservice Product API - Go
 
 ## Results
 
@@ -55,11 +55,10 @@ GET product by category ID
 
 ![image](https://github.com/bruno-silverio/goapi/assets/27282770/03aab543-b639-4e5a-96e4-c9ca1cf4f858)
 
-
-## Tecnologias
-<p>
-  
-  ![image](https://github.com/bruno-silverio/goapi/assets/27282770/5d16e733-40e4-4b5d-ad56-df0d3baaf8fe)
-  ![image](https://github.com/bruno-silverio/goapi/assets/27282770/9485ca6f-5b11-4243-88b1-01bceeb3457f)
-  
+## 
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=go" />
+    <img src="https://skillicons.dev/icons?i=docker" />
+  </a>
 </p>
